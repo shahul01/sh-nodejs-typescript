@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "webpack",
+    "build_old": "webpack",
+    "build": "npx tsc",
     "dev": "nodemon --exec ts-node src/index.ts",
-    "start": "node dist/bundle.js",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/shahul01/sh-nodejs-typescript#readme",
   "devDependencies": {
+    "@types/node": "^20.14.2",
     "nodemon": "^3.0.2",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
